@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html lang="en"> <!-- Sets the language of the document to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on different devices -->
+    <title>Cybersecurity Quiz</title> <!-- Defines the title of the page displayed in the browser tab -->
+    <link rel="icon" href="logo.jpg" type="image/jpg"> <!-- Adds a favicon to the page (small icon in browser tab) -->
+    <link rel="stylesheet" href="style.css"> <!-- Links an external CSS file to style the page -->
+</head>
+<body>
+    <!-- Start Page -->
+    <div id="start-page" class="page"> <!-- The start page where the user begins the quiz -->
+        <div class="container"> <!-- A container to center the content -->
+            <h1>Welcome to the Cybersecurity Quiz</h1> <!-- Main heading of the start page -->
+            <p>Test your knowledge of cybersecurity threats and best practices to stay safe online. Each question includes an explanation to help you learn more.</p> <!-- Introductory text for the quiz -->
+            <button class="btn-primary" onclick="goToSignIn()">Start Quiz</button> <!-- Button that triggers the transition to the sign-in page -->
+        </div>
+    </div>
+
+    <!-- Join the Quiz Page -->
+    <div id="sign-in-page" class="page" style="display:none;"> <!-- Page where the user inputs their name and selects difficulty, initially hidden -->
+        <div class="container">
+            <h1>Join the Quiz</h1> <!-- Heading for the sign-in page -->
+            <p>Enter your name to begin:</p> <!-- Prompt for entering the player's name -->
+            <input type="text" id="player-name" placeholder="Your Name"> <!-- Text input for the player's name -->
+            <p>Select difficulty level:</p> <!-- Prompt to choose difficulty -->
+            <select id="difficulty-level"> <!-- Dropdown menu to select quiz difficulty -->
+                <option value="easy">Easy</option> <!-- Option for easy difficulty -->
+                <option value="medium">Medium</option> <!-- Option for medium difficulty -->
+                <option value="hard">Hard</option> <!-- Option for hard difficulty -->
+            </select>
+            <button class="btn-primary" onclick="startQuiz()">Proceed</button> <!-- Button to start the quiz after selecting difficulty -->
+        </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="page" style="display:none;"> <!-- Main quiz page, initially hidden -->
+        <div class="container">
+            <h1>Cybersecurity Quiz</h1> <!-- Main heading for the quiz page -->
+            <div id="question" class="question">Loading question...</div> <!-- Placeholder for the current question -->
+            <div id="options" class="options"></div> <!-- Placeholder for the answer options -->
+            <div id="explanation-container" style="display:none;"> <!-- Container for the explanation, initially hidden -->
+                <h2>Explanation</h2> <!-- Heading for the explanation section -->
+                <p id="explanation"></p> <!-- The explanation text for the current question -->
+            </div>
+            <button id="next" class="btn-secondary" style="display:none; margin-top: 20px;" onclick="nextQuestion()">Next Question</button> <!-- Button to move to the next question, initially hidden -->
+        </div>
+    </div>
+
+    <!-- Score Page -->
+    <div id="score-page" class="page" style="display:none;"> <!-- Final score page, initially hidden -->
+        <div class="container">
+            <h1>Quiz Completed</h1> <!-- Heading indicating the quiz has been completed -->
+            <p id="score-message"></p> <!-- Message displaying quiz completion status -->
+            <p>Your final score is:</p> <!-- Prompt showing the user's final score -->
+            <div id="final-score" class="final-score">0 / 0</div> <!-- Displays the user's final score -->
+            <button class="btn-primary" onclick="restartQuiz()">Restart Quiz</button> <!-- Button to restart the quiz -->
+        </div>
+    </div>
+
+    <footer class="footer">Stay secure. Stay informed!</footer> <!-- Footer with a security message -->
+    <script src="script.js"></script> <!-- Links to the external JavaScript file containing the logic for the quiz -->
+</body>
+</html>

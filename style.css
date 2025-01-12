@@ -1,0 +1,167 @@
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif; /* Sets the font style for the page */
+    background-color: #e3f2fd; /* Light blue background */
+    color: #1c1e21; /* Default text color */
+    margin: 0; /* Removes default margins */
+    display: flex; /* Centers the page content */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Makes the body full viewport height */
+    text-align: center; /* Centers text content */
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 20px; /* Adds space below the heading */
+    font-size: 2rem; /* Sets the heading font size */
+    color: #2196f3; /* Blue color for headings */
+}
+
+p {
+    font-size: 1rem; /* Sets the font size for paragraphs */
+    line-height: 1.6; /* Improves readability */
+    margin-bottom: 20px; /* Adds space below the paragraph */
+    color: #333; /* Dark gray text color */
+}
+
+/* Input fields */
+input {
+    padding: 10px; /* Adds padding inside the input field */
+    font-size: 1rem; /* Sets the font size for input text */
+    margin-bottom: 20px; /* Adds space below the input field */
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 5px; /* Rounds the corners of the input field */
+    width: 80%; /* Makes the input responsive */
+    max-width: 300px; /* Limits the maximum width */
+    display: block; /* Centers the input */
+    margin: 0 auto; /* Centers the element */
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px; /* Adds padding to buttons */
+    font-size: 1rem; /* Sets the font size */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds button corners */
+    cursor: pointer; /* Changes the cursor on hover */
+    display: inline-block; /* Ensures proper spacing between buttons */
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color:#007bff; /* Blue background */
+    color: #fff; /* White text color */
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Page Container */
+.page {
+    width: 100%; /* Full-width container */
+    max-width: 800px; /* Maximum width */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto; /* Centers the container */
+}
+
+/* Question Styling */
+.question {
+    font-size: 1.5rem; /* Larger text for questions */
+    margin: 20px 0; /* Adds space above and below */
+    color: #000; /* Black text color */
+}
+
+/* Options styling */
+.options {
+    display: flex; /* Makes options stack vertically */
+    flex-direction: column;
+    gap: 10px; /* Adds space between options */
+}
+
+.options button {
+    background-color: #f5f5dc; /* Light beige background */
+    color: #333; /* Dark text color */
+    padding: 10px; /* Adds padding inside the buttons */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.options button:hover {
+    background-color: #e0e0b7; /* Slightly darker beige on hover */
+}
+
+/* Explanation Section */
+#explanation-container {
+    margin-top: 20px; /* Space above the explanation */
+    background-color: #fffbe6; /* Light yellow background */
+    padding: 15px; /* Padding inside the explanation box */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ffc107; /* Yellow border */
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Final Score Styling */
+.final-score {
+    font-size: 2rem; /* Larger font for score display */
+    font-weight: bold; /* Makes the text bold */
+    color: #28a745; /* Green text color */
+    margin: 20px; /* Adds space around the score */
+}
+
+/* Footer Styling */
+.footer {
+    font-size: 0.8rem; /* Smaller font size */
+    color: #777; /* Light gray color */
+    margin-top: 20px; /* Adds space above the footer */
+}
+
+/* Difficulty Level Styling */
+#sign-in-page .container {
+    text-align: center; /* Centers the content inside the container */
+    margin-top: 20px; /* Adds a top margin of 20px */
+}
+
+#sign-in-page p {
+    font-size: 18px; /* Sets the font size to 18px for paragraph text */
+    font-weight: bold; /* Makes the text bold */
+    margin-bottom: 10px; /* Adds a bottom margin of 10px */
+}
+
+#difficulty-level {
+    padding: 10px; /* Adds 10px padding inside the dropdown */
+    font-size: 16px; /* Sets the font size to 16px */
+    border: 2px solid #0056b3; /* Sets a blue border with a thickness of 2px */
+    border-radius: 5px; /* Rounds the corners of the dropdown with a radius of 5px */
+    background-color: #f9f9f9; /* Sets the background color to a light grey */
+    color: #333; /* Sets the text color to a dark grey */
+}
+
+#sign-in-page .btn-primary {
+    margin-top: 20px; /* Adds a top margin of 20px */
+    background-color: #007bff; /* Sets the background color to blue */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the border */
+    padding: 10px 20px; /* Adds padding of 10px top/bottom and 20px left/right */
+    font-size: 18px; /* Sets the font size to 18px */
+    border-radius: 5px; /* Rounds the corners of the button with a radius of 5px */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+}
+
+#sign-in-page .btn-primary:hover {
+    background-color: #0056b3; /* Changes the background color to a darker blue when hovering */
+}
